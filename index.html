@@ -2,23 +2,26 @@
 <html>
 
 <head>
+
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
-    <title>[ K.A.Paul Positive Impact on World ]</title>
+
+    <title>[ K.A.Paul ]</title>
+
+    <!-- Custom style  Youtube Channels Playlist -->
     <link type="text/css" rel="stylesheet" href="css/ycp.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <style>
         body {
             color: #fff;
-            background: #FF3B68;
-            background: -moz-linear-gradient(122deg, #FF3B68 30%, #A41CFF 81%);
-            background: -webkit-linear-gradient(122deg, #FF3B68 30%, #A41CFF 81%);
-            background: -o-linear-gradient(122deg, #FF3B68 30%, #A41CFF 81%);
-            background: -ms-linear-gradient(122deg, #FF3B68 30%, #A41CFF 81%);
-            background: linear-gradient(122deg, #FF3B68 30%, #A41CFF 81%);
+            background: #333;
+            background: -moz-linear-gradient(122deg, #333 30%, #222 81%);
+            background: -webkit-linear-gradient(122deg, #333 30%, #222 81%);
+            background: -o-linear-gradient(122deg, #333 30%, #222 81%);
+            background: -ms-linear-gradient(122deg, #333 30%, #222 81%);
+            background: linear-gradient(122deg, #333 30%, #222 81%);
             margin: 20px 10% 20px 10%;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif
         }
         
         a {
@@ -65,67 +68,66 @@
                 margin: 20px 0px 20px 0px
             }
         }
-        
-        .ani-bg {
-            background: linear-gradient(100deg, #000, #111, #222, #333);
-            background-size: 400% 400%;
-            animation: bg 30s infinite;
-        }
-        
-        .flexy {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        @keyframes bg {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-        
-        #wrapper {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            bottom: 0px;
-            right: 0px;
-            padding: 20px;
-        }
     </style>
+    <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
 
 </head>
 
 <body>
 
-    <div id="wrapper" class="ani-bg flexy">
-        <div>
-            <h1 style="text-align: center;font-size: 2em;font-weight: 100;">K.A.PAUL Impact to the World</h1>
-            <div id="unix"></div>
-        </div>
 
-    </div>
+    <!-- <p align="center">
+        <input id="tit" type="text" placeholder="Title">
+        <input id="ch" type="text" placeholder="ChannelId or UserName or PlayListId">
+        <input id="go" type="submit" value="Go">
+    </p> -->
+    <br>
+    <h1 style="text-align: center;font-weight: 100">K A Paul positive impact to the World</h1>
+    <br>
+    <div id="unix" data-ycp_title="[ K.A.Paul ]" data-ycp_channel="PLv9QnYD5eSdGReZiL5VGnwANyIwgXQNa8"></div>
+    <!-- By ChannelId -->
 
+
+    <!-- Selector by ClassName -->
+
+
+    <!-- include jQuery -->
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
+    <!-- jQuery Youtube Channels Playlist -->
     <script src="js/ycp.js"></script>
 
+    <!-- Setting Example -->
     <script>
         $(function() {
-            $("#unix").data('ycp_title', "Paul moves the world");
-            $("#unix").data('ycp_channel', "PLv9QnYD5eSdGReZiL5VGnwANyIwgXQNa8");
+
             $("#unix").ycp({
-                apikey: 'AIzaSyA0zXsGM-HFCeqduatAhM7AfG3NYzu8dQ8',
-                playlist: 20,
+                apikey: 'AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0',
+                playlist: 7,
                 autoplay: true,
-                related: false
+                related: true
             });
+
+            // $(".demo").ycp({
+            //     apikey: 'AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0'
+            // });
+
+            // $("#go").click(function() {
+            //     if ($("#tit").val() != '' && $("#ch").val() != '') {
+            //         $("#unix").data('ycp_title', $("#tit").val());
+            //         $("#unix").data('ycp_channel', $("#ch").val());
+            //         $("#unix").ycp({
+            //             apikey: 'AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0',
+            //             playlist: 10,
+            //             autoplay: true,
+            //             related: false
+            //         });
+            //     } else {
+            //         alert('Not empty!');
+            //     }
+            //     return false;
+            // });
+
         });
     </script>
 
