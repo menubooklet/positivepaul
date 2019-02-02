@@ -180,6 +180,12 @@
     cursor: pointer;
 }
 
+.head-text {
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+}
+
 @media screen and (max-width:767px) {
     .ycp {
         height: 1000px;
@@ -191,7 +197,7 @@
         width: 100%;
         display: block;
         background: none;
-        padding: 30px;
+        padding: 10px;
     }
     .ycp .belah:first-of-type {
         height: 40%;
@@ -209,6 +215,12 @@
         bottom: 0px;
         right: 0px;
         padding: 20px;
+    }
+    .head-text {
+        text-align: center;
+        font-weight: 100;
+        padding: 5px;
+        font-size: 1.1em;
     }
 }
 
